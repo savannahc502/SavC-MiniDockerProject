@@ -4,14 +4,14 @@
 
 ## Overview of the Project
 
-**Goal:** Docker is a great way to run applications independently of your OS, plus the Docker Hub stores thousands of images to pull from using the dimple `docker run` command. However, Docker Compose facilitates simultaneous use of two or more Docker containers, allowing for interaction between them. The configuration is specified in a [YAML file](https://github.com/savannahc502/SavC-MiniDockerProject/blob/main/docker-compose.yml) that can be customized to one's use case. This mini-project aims to practice creating the files necessary to use Docker Compose. 
+**Goal:** Docker is a great way to run applications independently of your OS, plus the Docker Hub stores thousands of images to pull from using the simple `docker run` command. However, Docker Compose facilitates simultaneous use of two or more Docker containers, allowing for interaction between them. The configuration is specified in a [YAML file](https://github.com/savannahc502/SavC-MiniDockerProject/blob/main/docker-compose.yml) that can be customized to one's use case. This mini-project aims to practice creating the files necessary to use Docker Compose. 
 
 <p align="center">
   <img src="https://github.com/savannahc502/SavC-MiniDockerProject/assets/113316987/615df321-9c83-459e-9dc2-8eb218ee6d45" />
 </p>
 
 **Project Services:** Deploying Chronograf, InfluxDB, and Telegraf to create a network monitoring stack of services. 
-* [InfluxDB](https://github.com/savannahc502/SavC-MiniDockerProject/blob/main/influxdb/influxdb.yml): Time-series datapase
+* [InfluxDB](https://github.com/savannahc502/SavC-MiniDockerProject/blob/main/influxdb/influxdb.yml): Time-series database
 * [Chronograf](https://github.com/savannahc502/SavC-MiniDockerProject/blob/main/chronograf/chronograf.yml): Web-based interface that visulaizes data stored in InfluxDB. Depends on InfluxDB to run (or a similar database)
 * [Telegraf](https://github.com/savannahc502/SavC-MiniDockerProject/blob/main/telegraf/telegraf.conf): Agent to collect, process, and send system metrics.
 
