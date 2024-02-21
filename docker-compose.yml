@@ -36,8 +36,7 @@ services:
       - ./telegraf:/etc/telegraf
     depends_on: 
       - influxdb
-
+      
 volumes: 
-  - influxdb-storage:/var/lib/infuxdb
-  - chronograf-storage:/var/lib/chronograf
-  - ./telegraf:/etc/telegraf
+  influxdb-storage:
+  chronograf-storage:
