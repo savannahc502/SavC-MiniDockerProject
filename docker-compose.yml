@@ -1,6 +1,6 @@
 services:
   influxdb:
-    image: influxdb: latest
+    image: influxdb:latest
     container_name: influxdb
     restart: always
     ports:
@@ -36,5 +36,8 @@ services:
       - ./telegraf:/etc/telegraf
     depends_on: 
       - influxdb
-      
-      
+
+volumes: 
+  - influxdb-storage:/var/lib/infuxdb
+  - chronograf-storage:/var/lib/chronograf
+  - ./telegraf:/etc/telegraf
