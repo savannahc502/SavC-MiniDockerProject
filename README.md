@@ -4,14 +4,14 @@
 
 ## Overview of the Project
 
-**Goal:** Docker is a great way to run applications independently of your OS, plus the Docker Hub stores thousands of images to pull from using the dimple `docker run` command. However, Docker Compose facilitates simultaneous use of two or more Docker containers, allowing for interaction between them. The configuration is specified in a YAML file that can be customized to one's use case. This mini-project aims to practice creating the files necessary to use Docker Compose. 
+**Goal:** Docker is a great way to run applications independently of your OS, plus the Docker Hub stores thousands of images to pull from using the dimple `docker run` command. However, Docker Compose facilitates simultaneous use of two or more Docker containers, allowing for interaction between them. The configuration is specified in a [YAML file](https://github.com/savannahc502/SavC-MiniDockerProject/blob/main/docker-compose.yml) that can be customized to one's use case. This mini-project aims to practice creating the files necessary to use Docker Compose. 
 
 **Project Services:** Deploying Chronograf, InfluxDB, and Telegraf to create a network monitoring stack of services. 
-* InfluxDB: Time-series datapase
-* Chronograf: Web-based interface that visulaizes data stored in InfluxDB. Depends on InfluxDB to run (or a similar database)
-* Telegraf: Agent to collect, process, and send system metrics.
+* [InfluxDB](https://github.com/savannahc502/SavC-MiniDockerProject/blob/main/influxdb/influxdb.yml): Time-series datapase
+* [Chronograf](https://github.com/savannahc502/SavC-MiniDockerProject/blob/main/chronograf/chronograf.yml): Web-based interface that visulaizes data stored in InfluxDB. Depends on InfluxDB to run (or a similar database)
+* [Telegraf](https://github.com/savannahc502/SavC-MiniDockerProject/blob/main/telegraf/telegraf.conf): Agent to collect, process, and send system metrics.
 
-In my project setup, telegraf would be used to collect system metrics of the nodes on a given network. That data would then be sent to InfluxDB to be organized, and Chronograf displays it in a visualize dashboard format. All three are essential and dependent on one another in order to have a proper network monitoring system (though similar services could replace some, like Grafana and Prometheus). 
+In my project setup, telegraf would be used to collect system metrics of the nodes on a given network. That data would then be sent to InfluxDB to be organized, and Chronograf displays it in a visual dashboard format. All three are essential and dependent on one another in order to have a proper network monitoring system (though similar services could replace some, like Grafana and Prometheus). 
 
 **Resources:** 
 * [What is Docker Compose? How to Use it with an Example](https://www.freecodecamp.org/news/what-is-docker-compose-how-to-use-it/)
