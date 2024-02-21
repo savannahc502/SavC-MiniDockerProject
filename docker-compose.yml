@@ -1,0 +1,40 @@
+services:
+  influxdb:
+    image: influxdb: latest
+    container_name: influxdb
+    restart: always
+    ports:
+      - "8086:8086"
+    volumes: 
+      - influxdb-storage:/var/lib/infuxdb
+    environment:
+      - INFLUXDB_DB=dbtest
+      - INFLUXDB_ADMIN_USER=savannah
+      - INFLUXDB_ADMIN_PASSWORD=ILoveAdmin2024!
+      - INFLUX_ADMIN_ENABLED=true
+      
+  chronograf:
+    image: chronograf:latest
+    container_name: chronograf
+    restart: always
+    ports: 
+      - "8888:8888"
+    volumes:
+      - chronograf-storage:/var/lib/chronograf
+    depends_on: 
+      - influxdb
+    environment: 
+      - INFLUXDB_URL=http://influxdb:8086
+      - INFLUXDB_USERNAME=savannah
+      - INFLUXDB_PASSWORD=ILoveAdmin2024!
+
+  telegraf:
+    image: telegraf:latest
+    container_name: telegraf
+    restart: always
+    volumes: 
+      - ./telegraf:/etc/telegraf
+    depends_on: 
+      - influxdb
+      
+      
