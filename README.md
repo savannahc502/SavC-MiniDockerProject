@@ -2,6 +2,9 @@
 
 [SYS265 GitHub Wiki](https://github.com/savannahc502/SavC-TechJournal-SYS265/wiki)
 
+![0 ZxjHjtmq-66RrsEB](https://github.com/savannahc502/SavC-MiniDockerProject/assets/113316987/04decfb7-303d-4d6d-84ea-4754821409ed)
+[Source](https://www.google.com/url?sa=i&url=https%3A%2F%2Favs431.medium.com%2Fexplain-it-to-me-like-i-am-a-5-year-old-what-are-docker-image-and-containers-b18db4863cb1&psig=AOvVaw0_eAvnCktD-UcbkAOH55aX&ust=1708641157670000&source=images&cd=vfe&opi=89978449&ved=0CBUQjhxqFwoTCLiZ6ru-vYQDFQAAAAAdAAAAABB1)
+
 ## Overview of the Project
 
 **Goal:** Docker is a great way to run applications independently of your OS, plus the Docker Hub stores thousands of images to pull from using the dimple `docker run` command. However, Docker Compose facilitates simultaneous use of two or more Docker containers, allowing for interaction between them. The configuration is specified in a [YAML file](https://github.com/savannahc502/SavC-MiniDockerProject/blob/main/docker-compose.yml) that can be customized to one's use case. This mini-project aims to practice creating the files necessary to use Docker Compose. 
