@@ -6,6 +6,10 @@
 
 **Resources:** 
 * https://www.freecodecamp.org/news/what-is-docker-compose-how-to-use-it/
+* https://github.com/fcuiller/docker-compose-telegraf-influxdb-grafana/blob/master/docker-compose.yml
+* https://stackoverflow.com/questions/12258399/how-do-i-create-a-folder-in-a-github-repository
+* https://hub.docker.com/_/telegraf
+* https://www.baeldung.com/ops/docker-compose
 
 ## File Structure
 
